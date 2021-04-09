@@ -1,26 +1,26 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 //create your first component
-export function Navbar() {
+export function Navbar(props) {
 	return (
 		<nav className="navbar navbar-expand-sm bg-dark navbar-dark">
 			<a className="navbar-brand" href="#">
 				StartBoostrap
 			</a>
-			<ul className="navbar-nav">
+			<ul className="navbar-nav ml-auto">
 				<li className="nav-item">
 					<a className="nav-link" href="#about">
-						About
+						Home
 					</a>
 				</li>
 				<li className="nav-item">
 					<a className="nav-link" href="#services">
-						Services
+						About
 					</a>
 				</li>
 				<li className="nav-item">
 					<a className="nav-link" href="#portfolio">
-						Portfolio
+						Services
 					</a>
 				</li>
 				<li className="nav-item">
@@ -32,3 +32,7 @@ export function Navbar() {
 		</nav>
 	);
 }
+Navbar.propTypes = {
+	title: PropTypes.string,
+	text: PropTypes.string
+};
