@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-//create your first component
+
 export function Navbar(props) {
 	return (
 		<nav className="navbar navbar-expand-sm bg-dark navbar-dark">
