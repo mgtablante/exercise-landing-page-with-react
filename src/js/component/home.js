@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar } from "./navbar.js";
 import { Jumbotron } from "./jumbotron.js";
 import { Card } from "./card.js";
+import { Footer } from "./footer.js";
+import "../../styles/index.scss";
 
 export function Home() {
 	return (
@@ -37,6 +39,7 @@ export function Home() {
 					/>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 }
